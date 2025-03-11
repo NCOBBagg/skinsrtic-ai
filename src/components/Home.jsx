@@ -1,21 +1,32 @@
-import React from 'react'
-import Header from './header'
-import skinCare from '../assets/Sophisticated skincare.png'
+import React from "react";
+import Header from "./header";
+import skinCare from "../assets/Sophisticated skincare.png";
+import leftArrow from "../assets/buttin-icon-shrunk.png";
+import rightArrow from "../assets/buttin-icon-shrunk-2.png";
 
 const Home = () => {
   return (
     <>
-    <Header />
-    <div className='w-full h-screen flex justify-center items-center'>
-        <div className='max-w-1/2 h-5 flex flex-col justify-center items-center'>
-            <img src={skinCare} alt="" />
-        </div>
-    </div>
-    
-    </>
-    
-    
-  )
-}
+      <Header />
+      <section className="w-full h-screen flex items-center ">
+        <div className="w-full h-5 flex justify-center items-center space-x-80">
+          <div className="flex items-center gap-3 uppercase text-sm">
+            <img className="" src={leftArrow} alt="" />
+            <p>Discover A.I.</p>
+          </div>
 
-export default Home
+          <div className="">
+            <img src={skinCare} alt="" />
+          </div>
+
+          <div className="flex items-center gap-3 uppercase text-sm">
+            <p>Take Test</p>
+            <img src={rightArrow} alt="" />
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Home;
