@@ -11,18 +11,20 @@ const Home = () => {
     <>
       <Header />
       <section className="w-full sm:py-32 py-20 sm:px-5 px-5 h-screen flex items-center ">
-        <div className="w-full flex justify-center items-center space-x-96 ">
-          <div
-            id="home-btn"
-            className="flex items-center gap-3 uppercase text-sm"
-          >
-            <img className="absolute left-3 " src={leftArrow} alt="" />
+        <div className="w-full flex justify-center items-center">
+          <div className="flex items-center gap-2s uppercase text-sm">
+            <img
+              id="hero-btn"
+              className="absolute left-6 "
+              src={leftArrow}
+              alt=""
+            />
             <div className="flex justify-center items-center">
-              <p className="">Discover A.I.</p>
+              <p className="absolute left-20">Discover A.I.</p>
             </div>
 
-            <div className=" flex justify-center items-center">
-              <img className="absolute left" src={leftRectangle} alt="" />
+            <div className="flex justify-center items-center">
+              <img className="absolute left-0" src={leftRectangle} alt="" />
             </div>
           </div>
 
@@ -31,14 +33,15 @@ const Home = () => {
             <p>skincare</p>
           </div>
 
-          <div id="home-btn" className="flex items-center gap-2 uppercase text-sm">
+          <div className="flex items-center gap-2 uppercase text-sm">
+            <img className="absolute right-2" src={rightRectangle} alt="" />
+            <p className="absolute right-20">Take Test</p>
             <img
-              className="absolute right-2 ml-3"
-              src={rightRectangle}
+              id="home-btn"
+              className="absolute right-6"
+              src={rightArrow}
               alt=""
             />
-            <p>Take Test</p>
-            <img src={rightArrow} alt="" />
           </div>
         </div>
 
