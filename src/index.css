@@ -11,3 +11,8 @@
   position: relative;
   max-width: 1120px;
 }
+
+#home-btn {
+  cursor: pointer;
+  
+}
