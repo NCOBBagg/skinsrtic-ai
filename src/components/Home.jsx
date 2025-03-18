@@ -7,14 +7,16 @@ import leftRectangle from "../assets/Rectangle 2779.png";
 import rightRectangle from "../assets/Rectangle 2778.png";
 
 const Home = () => {
+
+  
   return (
     <>
       <Header />
-      <section className="w-full sm:py-32 py-20 sm:px-5 px-5 h-screen flex items-center ">
+      <section className="w-full sm:py-32 py-20 sm:px-5 px-5 h-screen flex items-center overflow-hidden">
         <div className="w-full flex justify-center items-center">
           <div className="flex items-center gap-2s uppercase text-sm">
             <img
-              id="hero-btn"
+              id="home-btn"
               className="absolute left-6 "
               src={leftArrow}
               alt=""
