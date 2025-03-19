@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header";
+import { Link } from "react-router-dom";
 // import skinCare from "../assets/Sophisticated skincare.png";
 import leftArrow from "../assets/buttin-icon-shrunk.png";
 import rightArrow from "../assets/buttin-icon-shrunk-2.png";
@@ -7,8 +8,6 @@ import leftRectangle from "../assets/Rectangle 2779.png";
 import rightRectangle from "../assets/Rectangle 2778.png";
 
 const Home = () => {
-
-  
   return (
     <>
       <Header />
@@ -34,17 +33,18 @@ const Home = () => {
             <p className="">Sophisticated</p>
             <p>skincare</p>
           </div>
-
-          <div className="flex items-center gap-2 uppercase text-sm">
-            <img className="absolute right-2" src={rightRectangle} alt="" />
-            <p className="absolute right-20">Take Test</p>
-            <img
-              id="home-btn"
-              className="absolute right-6"
-              src={rightArrow}
-              alt=""
-            />
-          </div>
+          <Link to="/Landing">
+            <div className="flex items-center gap-2 uppercase text-sm">
+              <img className="absolute right-2" src={rightRectangle} alt="" />
+              <p className="absolute right-20">Take Test</p>
+              <img
+                id="home-btn"
+                className="absolute right-6"
+                src={rightArrow}
+                alt=""
+              />
+            </div>
+          </Link>
         </div>
 
         <div className="w-[25%] flex items-center absolute bottom-0 left-0 uppercase text-sm px-7 ">
