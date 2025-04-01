@@ -1,16 +1,27 @@
 import Header from "./header";
 import rightArrow from "../assets/buttin-icon-shrunk-2.png";
 import rightRectangle from "../assets/Rectangle 2778.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 
 const Landing = () => {
+
+    useGSAP(() => {
+        gsap.to("#main-text", {
+            x: -400,
+            duration: 1.5,
+            ease: "power2.out",
+        })
+    }, [])
+
   return (
     <>
       <Header />
       <section className="w-full sm:py-32 py-20 sm:px-5 px-5 h-screen flex items-center overflow-hidden">
         <div className="w-full flex justify-center items-center">
-          <div className="flex flex-col justify-center items-center absolute left-8 font-light text-8xl">
-            <p className="">Sophisticated</p>
+          <div id="main-text" className="flex flex-col justify-center items-center font-light text-8xl">
+            <p  className="">Sophisticated</p>
             <p>skincare</p>
           </div>
 
